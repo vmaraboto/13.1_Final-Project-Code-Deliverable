@@ -116,7 +116,7 @@ function addPhotos() {
 // function to enable full-size viewing of photos in the gallery selected by the user
 function fullSize() {
     // add click event listener to each photo in the gallery
-    document.querySelectorAll('.gallery-photo').forEach(img => {
+    document.querySelectorAll('.galleryPhoto').forEach(img => {
         // when the photo is clicked, go full view
         img.onclick = function() {
             // create a full-screen div to display the photo
@@ -166,4 +166,5 @@ function fullSize() {
             document.body.appendChild(full);
         };
     });
+
 }
