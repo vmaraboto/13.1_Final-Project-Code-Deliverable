@@ -1,0 +1,148 @@
+/* body styling to align content to center and change the background and text color */
+body{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+/* header styling to adijust the main navigation */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* header nav styling to perfect the placement of the navigation menu */
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* footer nav styling to adjust the contact information found in the footer */
+footer nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+/* footer to add space above the footer */
+footer{
+    margin-top: 10px;
+}
+
+/* p styling to center and limit the width of all paragraph tags */
+p{
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* button styling to make the buttons more cohesive with the rest of the page */
+button{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 15px;
+    margin: 15px 5px 0px 5px;
+    width: 100px;
+}
+
+/* slide id styling to get rid of border on buttons */
+#slide{
+    border: none;
+}
+
+/* slide hover id styling to get rid of white hover of the buttons */
+#slide:hover{
+    background-color: black;
+}
+
+/* button hover to change and highlight the button that is about to be selected */
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* dropdown button focus class styling to keep the button white with black text */
+.dropBtn:focus{
+    background-color: white;
+    color: black;
+}
+
+/* dropdown class styling to help position the dropdown */
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+/* dropdown content class styling to display and organize the dropdown options */
+.dropdownContent{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    z-index: 1;
+    right: 0;
+}
+
+/* dropdown content class a styling to add more organization and cohesiveness to dropdown options */
+.dropdownContent a{
+    color: black;
+    padding: 14px;
+    text-decoration: none;
+    display: block;
+}
+
+/* dropdown content class a hover styling to highlight the option that is about to be selected */
+.dropdownContent a:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+/* show class styling to display the dropdown options */
+.show{
+    display: block;
+}
+
+/* photo slide class styling to center the photo and buttons */
+.photoSlide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* icon id styling to adjust the size of the icons */
+#icon{
+    width: 40px;
+}
+
+/* image photo id styling to adjust the size of the photo */
+#imgPhoto{
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+    border: 2px solid white;
+    margin: 10px;
+}
+
+/* photos id styling to adjust the display of the photos */
+#photos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* gallery photo class styling to adjust the size of the photos in the gallery */
+.galleryPhoto{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border: 2px solid white;
+    margin: 0 auto;
+    display: block;
+}

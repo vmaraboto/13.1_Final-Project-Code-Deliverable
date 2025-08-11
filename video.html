@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reyalis</title>
+    <!-- link page icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- link to style sheet -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Reyalis</h1>
+        <!-- page navigation with a dropdown menu holding the portfolio options -->
+        <nav>
+            <a href="home.html">
+                <button>Home</button>
+            </a>
+            <!-- div with dropdown menu -->
+            <div class="dropdown">
+                <button onclick="dropdown()" class="dropBtn">Portfolio</button>
+                <div id="dropdown" class="dropdownContent">
+                    <a href="photo.html">Photography</a>
+                    <a href="video.html">Videography</a>
+                </div>
+            </div>
+            <a href="about.html">
+                <button>About</button>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Videography</h2>
+        <!-- video display holding desired video -->
+        <video width="600" height="450" controls>
+            <!-- source for graduation video -->
+            <source src="./videos/graduation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- title for video -->
+        <h3>Graduation 2023</h3>
+        <!-- description of what can be seen in the video -->
+        <p>Graduation video for the class of 2023 of Instituto Mexico. Photos and videos were sourced from class of 2023, except for the videos that scanned across the campus of the school.</p>
+    </main>
+
+    <footer>
+        Copyright @Donkor Reyalis
+
+        <!-- navigation holding all contact info -->
+        <nav>
+            <a href="https://www.instagram.com/dav.r.m/#">
+                <img src="./images/instagram.png" alt="Instagram Icon" id="icon">
+            </a>
+            <a href="https://www.tiktok.com/@donkor.reyalis">
+                <img src="./images/tiktok.png" alt="TikTok Icon" id="icon">
+            </a>
+            <a href="https://x.com/reyalisdk">
+                <img src="./images/twitter.png" alt="Twitter/X Icon" id="icon">
+            </a>
+            <a href="https://www.youtube.com/@donkorreyalis">
+                <img src="./images/youtube.png" alt="Youtube Icon" id="icon">
+            </a>
+            <a href="https://wa.me/526564092174">
+                <img src="./images/whatsapp.png" alt="WhatsApp Icon" id="icon">
+            </a>
+        </nav>
+    </footer>
+
+    <!-- link to javascript fiel -->
+    <script src="./reyalis.js"></script>
+</body>
+</html>

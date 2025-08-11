@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reyalis</title>
+    <!-- link page icon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- link to style sheet -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Reyalis</h1>
+        <!-- page navigation with a dropdown menu holding the portfolio options -->
+        <nav>
+            <a href="home.html">
+                <button>Home</button>
+            </a>
+            <!-- div with dropdown menu -->
+            <div class="dropdown">
+                <button onclick="dropdown()" class="dropBtn">Portfolio</button>
+                <div id="dropdown" class="dropdownContent">
+                    <a href="photo.html">Photography</a>
+                    <a href="video.html">Videography</a>
+                </div>
+            </div>
+            <a href="about.html">
+                <button>About</button>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>What is Reyalis?</h2>
+        <p>Donkor Reyalis, also known as Reyalis, has one mission, to be able to capture and share magical and happy moments with its customers. Keeping memories forever.</p>
+
+        <h2>Photography</h2>
+        <!-- photography slideshow displaying a few examples of the photography done -->
+        <div class="photoSlide">
+            <!-- button to move to the previous image -->
+            <button onclick="previous()" id="slide">
+                <img src="./images/previous.png" id="icon">
+            </button>
+            <!-- image holder for the current slide -->
+            <img id="imgPhoto" src="" alt="Photography Slideshow">
+            <!-- button to move to the next image -->
+            <button onclick="next()" id="slide">
+                <img src="./images/next.png" id="icon">
+            </button>
+        </div>
+        <!-- blank info paragraph for image -->
+        <p id="info"></p>
+
+        <h2>Videography</h2>
+        <!-- video display for example of video calculation -->
+        <video width="600" height="450" controls>
+            <source src="./videos/graduation.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Graduation 2023</p>
+
+        <h2>About</h2>
+        <p>David is the creater of Donkor Reyalis, he has always had a love for photography and videography. Being able to tell a number of stories through images and videos, he inspires all who watch his content.</p>
+        <p>To see more, visit our about page.</p>
+    </main>
+
+    <footer>
+        Copyright @Donkor Reyalis
+
+        <!-- navigation holding all contact info -->
+        <nav>
+            <a href="https://www.instagram.com/dav.r.m/#">
+                <img src="./images/instagram.png" alt="Instagram Icon" id="icon">
+            </a>
+            <a href="https://www.tiktok.com/@donkor.reyalis">
+                <img src="./images/tiktok.png" alt="TikTok Icon" id="icon">
+            </a>
+            <a href="https://x.com/reyalisdk">
+                <img src="./images/twitter.png" alt="Twitter/X Icon" id="icon">
+            </a>
+            <a href="https://www.youtube.com/@donkorreyalis">
+                <img src="./images/youtube.png" alt="Youtube Icon" id="icon">
+            </a>
+            <a href="https://wa.me/526564092174">
+                <img src="./images/whatsapp.png" alt="WhatsApp Icon" id="icon">
+            </a>
+        </nav>
+    </footer>
+
+    <!-- link to javascript fiel -->
+    <script src="./reyalis.js"></script>
+</body>
+</html>
